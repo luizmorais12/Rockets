@@ -1,7 +1,7 @@
 -- name: GetRoom :one
 SELECT
     "id", "theme"
-FROM  rooms
+FROM rooms
 WHERE id = $1;
 
 -- name: GetRooms :many
@@ -57,5 +57,3 @@ SET
     answered = true
 WHERE
     id = $1;
-
-    

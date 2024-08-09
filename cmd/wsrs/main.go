@@ -1,14 +1,15 @@
 package main
 
 import (
-	"Rockts/internal/api"
-	"Rockts/internal/store/pgstore"
 	"context"
 	"errors"
 	"fmt"
 	"net/http"
 	"os"
 	"os/signal"
+
+	"github.com/luizmorais12/Rockets/internal/api"
+	"github.com/luizmorais12/Rockets/internal/store/pgstore"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/joho/godotenv"
